@@ -15,10 +15,8 @@ def celicius_conversion(fahrenheit):
     return ((fahrenheit - 32) * (5/9))
 
 temperature_input = temperature_inputs()
-provided_temperatures_F = []   
-provided_temperatures_F.append(temperature_input)
-provided_temperatures_C = []
+
 converted_temperatures = celicius_conversion(temperature_input)
-provided_temperatures_C.append(converted_temperatures)
+
 
 print(f'That converts to {converted_temperatures: .2f}°C')
